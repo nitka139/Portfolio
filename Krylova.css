@@ -1,0 +1,384 @@
+<style type="text/css">
+		@font-face {
+	    font-family: fa;
+	    src: url(fonts/fa-brands-400.ttf); 
+		}
+		@font-face {
+	    font-family: fa;
+	    src: url(fonts/fa-regular-400.ttf); 
+		}
+		@font-face {
+	    font-family: fa;
+	    src: url(fonts/fa-solid-900.ttf); 
+		}
+		@font-face {
+	    font-family: fontawesome;
+	    src: url(fonts/fontawesome-webfont.ttf); 
+		}
+		@font-face {
+	    font-family: Philosopher;
+	    src: url(fonts/Pholosopher-Bold.ttf); 
+		}
+		@font-face {
+	    font-family: Philosopher;
+	    src: url(fonts/Philosopher-Regular.ttf); 
+		}
+		@font-face {
+	    font-family: Roboto;
+	    src: url(fonts/Roboto-Italic.ttf); 
+		}
+		@font-face {
+	    font-family: Roboto;
+	    src: url(fonts/Roboto-Medium.ttf); 
+		}
+		@font-face {
+	    font-family: Roboto;
+	    src: url(fonts/Roboto-Regular.ttf); 
+		}
+</style>
+<style type="text/css">
+		html, body {
+			height: 100%;
+			width: 100%;
+		}
+		
+		.header {
+			background-color: #008daa;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			box-shadow: 0px 5px 5px 0px rgba(122,122,122,0.5);
+			
+		}
+		.headerLinkInfo {
+			color: #d4d0c8;
+			text-decoration: underline;
+			font-size: 19px;
+			padding-left: 0px;
+
+		}
+		.headerLinkInfo:hover {
+		    color: #fff;  
+		} 
+		.social_box {
+	        
+    	    display: flex;
+        	flex-direction: row;
+        	justify-content: space-between;
+      	}
+		.headerSocialIcons {
+			margin-top: 0;
+	        padding-top: 0;
+	        
+	        width: 30px;
+	        height: 30px;
+		}
+		.headerSocialIcons i {
+        	font-size: 25px;
+        	color: #d4d0c8;
+      	}
+      
+      	.headerSocialIcons:hover i {
+        	color: #eeeeed;
+     	 }
+     	 
+		.menu {
+			background-color: #eeeeed;
+			color: #06bac5;
+		}
+		.nav-link {
+			color: #06bac5;
+		}
+		.nav-link:hover {
+			color: #eb477b;
+		}
+		.block_one {
+			background-color: #eeeeed;
+			width: 100%;
+			height: auto;
+			}
+		.box {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-top: -110px;
+		}
+		.imgBlock1 {
+			height: 600px;
+			width: 750px;
+			margin-left: 25px ;
+		}
+		.headcont1 {
+			text-align: right;
+			font-size: 46px;
+			font-family: Philosopher;
+			color: #005c7d;
+			margin-top: 50px;
+		}
+		.infocont1 {
+			text-align: right;
+			color: #005c7d;
+			font-family: "Roboto";
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 110px;
+		}
+		.infocont1 > p {
+			margin-bottom: 35px;
+		}
+		.buttonCont1 {
+			background-color: #005c7d;
+			width: 260px;
+			height: 40px;
+			padding: 0;
+			border-radius: 45px;
+			color: #fff;
+			font-size: 24px;
+		}
+		.buttonCont1:hover {
+			background-color: #eb477b;
+			color: #fff;
+		}
+		.block_two {
+			width: 100%;
+			height: auto;
+			}
+		.headercont2 {
+			text-align: center;
+			color: #005c7d;
+			font-family: Philosopher;
+			font-size: 45px;
+			font-weight: bold;
+			margin-top: 55px;
+			margin-bottom: 50px;
+		}
+		.contentCont2 {
+			text-align: justify;
+			color: #005c7d;
+			font-family: "Roboto";
+			font-size: 20px;
+		}
+		.detailscont2 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			color: #06bac5;
+			font-size: 14px;
+			font-family: "Roboto";
+			margin-left: -15px;
+    		margin-right: -15px;
+		}
+		.HeaderOfDetailsCont2 {
+			color:#005c7d;
+			font-family: "Philosopher";
+			font-size: 22px;
+		}
+		.block_three {
+			background-color: #eeeeed;
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+		.headerCont3 {
+			text-align: center;
+			font-family: "Philosopher";
+			font-size: 45px;
+			font-weight: bold;
+			color:#005c7d ;
+			padding-bottom: 30px;
+		}
+		.ContentOfCont3 {
+			text-align: left;
+			font-family: "Roboto";
+			color:#005c7d;
+			font-size: 20px;
+			
+		}
+		ul {
+			padding-left: 5px;
+		}
+		li {
+			padding-bottom: 20px;
+			padding-top: 30px;
+		}
+		
+		.block_four {
+			text-align: center;
+			padding-top: 100px;
+			padding-bottom: 150px;
+		}
+		.headerOfCont4 {
+			text-align: center;
+			font-family: "Philosopher";
+			font-size: 45px;
+			color:#005c7d ;
+			font-weight: bold;
+			
+		}
+		.btnCardHeader {
+			font-family: "Philosopher";
+			font-size: 20px;
+			color:#008daa;
+			font-weight: bold;
+			text-align: left;
+		}
+		.collapseContent {
+			font-family: "Roboto";
+			font-size: 16px;
+			font-style: italic;
+			color:#005c7d;
+		}
+		.questionCont4 {
+			font-family: "Philosopher";
+			font-size: 30px;
+			color:#008daa;
+			font-weight: bold;
+		}
+		.LinkOfQuestionCont4 {
+			font-family: "Philosopher";
+			font-size: 30px;
+			color:#005c7d;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+		.btnCardHeader:before {
+			    content:"\25B2";
+		}
+		.active:before {
+			    content: "\25BC";
+	    }
+	    .LinkOfQuestionCont4:hover {
+			color: #eb477b;
+		}
+		.btnCardHeader:hover {
+			color:#008daa;
+		}
+		.block_five {
+			
+		
+			background-color: #eeeeed;
+			padding-bottom: 200px;
+			padding-top: 100px;
+		}
+		.headerCont5 {
+			font-family: "Philosopher";
+			font-size: 45px;
+			text-align: center;
+			font-weight: bold;
+			color: #005c7d;
+			padding-bottom: 100px;
+		}
+
+		.contentCont5 {
+			text-align:justify;
+			color: #005c7d;
+			font-family: "Roboto";
+			font-size: 17px;
+			font-style: italic;
+		}
+		.img1Cont5 {
+			text-align: center;
+		}
+		.imgToStudent {
+			width: 100px;
+			height: 100px;
+			border-radius: 90px;
+		}
+		.NameToPhoto {
+			text-align:center;
+			color: #088daa;
+			font-family: "Philosopher";
+			font-size: 24px;
+			
+		}
+		.carousel-control-prev-icon {
+			color: #4d40c8;
+		}
+		.carousel-control-next-icon{
+			color: #4d40c8;
+		}
+
+		.headerOfCont6 {
+			font-family: "Philosopher";
+			font-size: 45px;
+			text-align: center;
+			color:#005c7d ;
+			font-weight: bold;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+		.contentCont6 {
+			font-family: "Roboto";
+			font-size: 22px;
+			color:#005c7d;
+			font-weight: bolder;
+		}
+
+		.imgCont6 {
+			width: 200px;
+			height: 100px;
+			padding-bottom: 50px;
+			padding-top: -30px;
+		}
+		.linkCont6 {
+			text-align: right;
+		}
+		.detailsLinkCont6 {
+			color:#088daa;
+			font-family: "Roboto";
+			font-size: 22px;
+			font-weight: bold; 
+
+		}
+		.detailsLinkCont6:hover {
+			color:#eb477b;
+		}
+		.SocialNetworkCont6 {
+			text-align: center;
+			font-family: "Roboto";
+			font-size: 22px;
+			color:#005c7d;
+			font-weight: bolder;
+		}
+		.imagesCont6 {
+			padding-top: 40px;
+			padding-bottom: 80px;
+		}
+		.Block_sixSocialIcons {
+     	 	margin-top: 0;
+	        padding-top: 0;
+	        width: 60px;
+	        height: 60px;
+     	 }
+     	 .Block_sixSocialIcons i {
+     	 	font-size: 40px;
+        	color: #06bac5;
+     	 }
+     	 .Block_sixSocialIcons:hover i {
+     	   	color: #eb477b;
+     	 }
+     	 .icon_block_6 {
+     	 	padding-left: 20px;
+     	 	padding-right: 20px;
+     	 }
+
+		.block_footer {
+			background-color: #005c7d;
+			color: #fff;
+			font-family: "Roboto";
+		}
+		.contentOfFooter {
+			font-size: 20px;
+			font-weight: normal;
+		}
+		.linkOfFooter {
+			color: #fff;
+			font-size: 16px;
+			font-weight: lighter;
+		}
+		.linkOfFooter:hover {
+			color: #fff;
+		}
+		.footer {
+			padding-top: 20px;
+			padding-bottom: 20px;	
+		}
+	</style>
